@@ -1,0 +1,91 @@
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+main {
+  flex: 1 0 auto;
+}
+.banner{
+  opacity: 0.95
+}
+
+h3{
+  font-weight: bold;
+}
+
+option{
+  color:black
+}
+
+.card-panel{
+border: 1.5px solid white
+}
+
+#clearButton{
+  padding-left: 35px;
+  padding-right: 35px
+
+}
+::-webkit-input-placeholder {
+    color: black;
+    opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+    opacity: 1 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+    opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+   color: black;
+}
+
+.cover-image{
+    background: url('background_image.jpg') no-repeat center center fixed;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    opacity:
+}
+
+/* Retina display */
+@media screen and (max-width: 1024px){
+    .cover-image{
+        background-image: url('background_image.jpg');
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+    .cover-image{
+        background-image: url('background_image.jpg');
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .cover-image{
+        background-image: url('background_image.jpg');
+    }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .cover-image{
+        background-image: url('background_image.jpg');
+    }
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+    .cover-image{
+        background-image: url('background_image.jpg');
+    }
+}
